@@ -1,19 +1,35 @@
+# 📘 Atividade: Jogo da Forca
 
-# 🎮 Desafio: Jogo da Forca
+## 🎯 Objetivo
 
-Construa o clássico jogo de adivinhar palavras usando strings, loops e entrada de dados do usuário em Python.
+Pratique manipulação de strings, loops, condicionais e seleção aleatória construindo o clássico jogo da forca, onde o jogador tenta adivinhar uma palavra oculta letra por letra.
 
-## 🎯 O Que Você Vai Construir
+## 📝 Tarefas
 
-Crie um jogo da Forca onde os jogadores adivinham letras para revelar uma palavra oculta antes de esgotar as tentativas.
+### 🛠️	Seleção da Palavra e Estado Inicial
 
-**Habilidades praticadas:** Manipulação de strings, loops, condicionais, seleção aleatória
+#### Descrição
+Selecione aleatoriamente uma palavra secreta de uma lista predefinida e inicialize as variáveis que controlam o estado do jogo.
 
-## ✅ Requisitos Obrigatórios
+#### Requisitos
+O programa concluído deve:
 
-Seu jogo deve:
-- Selecionar palavras aleatoriamente de uma lista predefinida
-- Aceitar palpites de letras e mostrar o progresso atual (formato _ _ _)
-- Rastrear tentativas incorretas restantes
-- Encerrar quando a palavra for adivinhada ou as tentativas esgotarem
-- Exibir mensagens de vitória/derrota
+- Selecionar aleatoriamente uma palavra de uma lista predefinida (`words`)
+- Inicializar o conjunto/lista de letras já adivinhadas (vazio no início)
+- Inicializar o contador de tentativas incorretas (0 no início)
+- Definir o número máximo de tentativas incorretas permitidas
+
+
+### 🛠️	Loop Principal e Resultado do Jogo
+
+#### Descrição
+Implemente o loop principal que exibe o progresso, recebe os palpites do jogador e determina o fim de jogo (vitória ou derrota).
+
+#### Requisitos
+O programa concluído deve:
+
+- Exibir o progresso atual da palavra no formato `_ _ _`
+- Aceitar palpites de letras via `input()` do usuário
+- Atualizar letras adivinhadas e tentativas incorretas restantes
+- Encerrar o loop quando a palavra for totalmente adivinhada ou as tentativas se esgotarem
+- Exibir uma mensagem de vitória ou de derrota ao final
